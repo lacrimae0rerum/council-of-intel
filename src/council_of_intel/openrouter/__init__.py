@@ -1,0 +1,1 @@
+"""OpenRouter integration package placeholder."""

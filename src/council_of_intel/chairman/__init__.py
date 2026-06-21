@@ -1,0 +1,1 @@
+"""Chairman synthesis package placeholder."""

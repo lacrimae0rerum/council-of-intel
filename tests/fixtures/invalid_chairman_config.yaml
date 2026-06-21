@@ -1,0 +1,36 @@
+openrouter:
+  api_key_env: OPENROUTER_API_KEY
+  base_url: https://openrouter.ai/api/v1
+  timeout_seconds: 120
+  retry_attempts: 1
+  retry_backoff_base_seconds: 2
+allowed_models:
+  - openai/gpt-5.5
+chairman_model_synthesis: anthropic/missing
+chairman_model_counterfactual: openai/gpt-5.5
+defaults:
+  mode: sats
+  chairman_personality: mclaughlin
+validation:
+  enforce_unique_models_council_mode: true
+  enforce_unique_models_sats_mode: false
+  block_same_personality_same_model: true
+  enforce_unique_personality: warn
+  provider_diversity_warn_threshold: 0.5
+  min_seats_to_continue_after_failures: 3
+anticonvergence:
+  agreement_threshold: 0.7
+  counterfactual_max_words: 200
+cross_examination:
+  min_engaged_seats: 2
+  max_words: 300
+  anti_recursion_retries: 1
+polling:
+  status_interval_seconds: 1.5
+server:
+  preferred_port: 8000
+  port_range_fallback: [8001, 8010]
+logging:
+  level: INFO
+  format: json
+  path: logs/council.log
