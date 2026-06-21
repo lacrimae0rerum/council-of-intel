@@ -94,35 +94,55 @@ Las sesiones se persisten como JSON en `sessions/` e indexan en SQLite.
 ## Requisitos
 
 - API key de [OpenRouter](https://openrouter.ai) con crédito disponible.
-- Para la distribución: Windows (onedir).
+- Para la distribución standalone: Mac (arm64), Linux (amd64) o Windows.
 - Para desarrollo: Python 3.12+, `uv`, Node 20+.
 
 ---
 
-## Instalación (distribución Windows)
+## Instalación
 
-1. Descomprime `dist/council-of-intel-v0.1.0-windows-onedir.zip`.
-2. Crea `.env` en la carpeta extraída:
+Descarga la distribución para tu plataforma desde la [página de releases](https://github.com/lacrimae0rerum/council-of-intel/releases).
 
-   ```
-   OPENROUTER_API_KEY=sk-or-v1-...
-   ```
+### Mac (arm64)
 
-3. Valida:
+```bash
+unzip council-of-intel-v0.1.0-mac-arm64.zip
+cd council-of-intel
+echo "OPENROUTER_API_KEY=sk-or-v1-..." > .env
+./council-of-intel --dry-run
+```
 
-   ```powershell
-   .\council-of-intel.exe --dry-run
-   ```
+> En macOS puede aparecer un aviso de seguridad la primera vez. Ve a **Ajustes del sistema → Privacidad y seguridad** y haz clic en "Abrir igualmente".
+
+### Linux (amd64)
+
+```bash
+unzip council-of-intel-v0.1.0-linux-amd64.zip
+cd council-of-intel
+echo "OPENROUTER_API_KEY=sk-or-v1-..." > .env
+chmod +x council-of-intel
+./council-of-intel --dry-run
+```
+
+### Windows
+
+```powershell
+# Descomprime council-of-intel-v0.1.0-windows-onedir.zip
+# Crea .env con OPENROUTER_API_KEY=sk-or-v1-...
+.\council-of-intel.exe --dry-run
+```
 
 ---
 
 ## Uso
 
-```powershell
-.\council-of-intel.exe --web    # interfaz web (recomendada)
-.\council-of-intel.exe --tui    # terminal
-.\council-of-intel.exe          # menú [1] TUI  [2] Web  [3] Dry-run
+```bash
+./council-of-intel --web    # interfaz web (recomendada)
+./council-of-intel --tui    # terminal
+./council-of-intel          # menú [1] TUI  [2] Web  [3] Dry-run
 ```
+
+En Windows usa `.\council-of-intel.exe`.
 
 ---
 
