@@ -1,5 +1,7 @@
 # council-of-intel
 
+![Council of Intel](assets/banner.png)
+
 App standalone de deliberación multi-LLM para análisis de inteligencia.
 
 Inspirada en el [Council of LLMs de Andrej Karpathy](https://github.com/karpathy/LLM-Council), pero en vez de personalidades genéricas, el consejo está formado por figuras del mundo de la inteligencia: analistas IC, teóricos de warning intelligence, pensadores estratégicos del mundo clásico y arquetipos de las SATs. La pregunta que le haces al consejo es una pregunta de inteligencia. El consejo delibera una sola vez (Round 0–4) y devuelve un Stage Final estructurado.
