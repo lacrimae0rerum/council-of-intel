@@ -69,6 +69,22 @@ El catálogo cerrado tiene 17 personalidades en cuatro familias.
 
 ---
 
+## Capturas
+
+**Web — modo SATs:** se eligen los seats de las Structured Analytic Techniques y se plantea la pregunta de inteligencia.
+
+![Web — modo SATs](assets/web-mode.jpg)
+
+**Web — modo Council:** el catálogo de doctrinarios IC y pensadores estratégicos.
+
+![Web — modo Council](assets/web-mode2.jpg)
+
+**TUI:** la misma deliberación desde el terminal, con los rounds y los seats en vivo.
+
+![TUI](assets/tui-mode.jpg)
+
+---
+
 ## Output
 
 ```
